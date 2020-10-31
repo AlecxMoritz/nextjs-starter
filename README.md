@@ -4,3 +4,4 @@ V basic starter for personal projects using NextJS
 * Next
 * ESLint
 * Full Material UI set up
+* Prettier
