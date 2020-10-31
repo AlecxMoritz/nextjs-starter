@@ -5,19 +5,23 @@
   "scripts": {
     "startProd": "next start -p 4200",
     "build": "next build",
-    "start": "next dev -p 4200"
+    "start": "next dev -p 4200",
+    "prettier:warn": "prettier --check \"./components/**/*.{js,jsx,json}\" \"./pages/**/*.{js,jsx,json}\"",
+    "prettier:fix": "prettier --write \"./components/**/*.{js,jsx,json}\" \"./pages/**/*.{js,jsx,json}\""
   },
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
     "@material-ui/styles": "^4.10.0",
     "next": "10.0.0",
-    "prettier": "^2.1.2",
     "react": "17.0.1",
     "react-dom": "17.0.1"
   },
   "devDependencies": {
     "eslint": "^7.12.1",
-    "eslint-plugin-react": "^7.21.5"
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.21.5",
+    "prettier": "^2.1.2"
   }
 }
